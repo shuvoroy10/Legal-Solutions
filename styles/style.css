@@ -14,6 +14,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 1rem;
 }
 .display-flex{
     display: flex;
@@ -52,5 +53,87 @@ header nav li a{
     color: #FFFFFF;
     border: none;
     border-radius: 10px;
-    font-size: 1.08rem;
+    font-size: 1.2rem;
+}
+
+/* Banner section */
+
+/* .banner{
+    background-image: url(../images/banner.png); 
+    height: 550px;
+    background-size: cover;
+    position: relative;
+}
+
+main .overlay {
+    width: 100%;
+    opacity: 0.3;
+    background-size: cover; 
+}
+.text-section{
+    position: absolute;
+    width: 692px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+} */
+ /* Chat Gpt */
+.banner {
+  background-image: url(../images/banner.png);
+  height: 550px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner .overlay {
+  background-image: url(../images/overlay.png); /* তোমার দ্বিতীয় ইমেজ */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.text-section {
+  position: absolute;
+  width: 692px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  color: black; /* অথবা white, ব্যাকগ্রাউন্ড অনুযায়ী */
+}
+
+.banner-title{
+    font-size: 4.5rem;
+    color: #FFFFFF;
+    font-weight: 800;
+    text-align: center;
+}
+.banner-description{
+    margin-top: 24px;
+    color: #E7E7E7;
+    text-align: center;
+}
+.search-container{
+    margin-top: 32px;
+    width: 674px;
+    height: 64px;
+}
+.search-box{
+    width: 500px;
+    height: 64px;
+    color: #A0A0A0;
+    padding-left: 20px;
+}
+.search-button{
+    width: 150px;
+    height: 64px;
 }
